@@ -33,5 +33,16 @@ pre[class^=cod-] {
 /**
     CSS
 */
+.show-selectores {
+  color: #ffd000 !important;
+}
+
+.show-claves {
+  color: #6500a8 !important;
+}
+
+.show-prop {
+  color: #0065a8 !important;
+}
 
 /*# sourceMappingURL=tema-claro.css.map */
