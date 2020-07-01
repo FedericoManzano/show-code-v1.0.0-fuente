@@ -1,10 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import "generales";
+
+
+
 pre[class^=cod-] {
-    overflow: auto;
-    font-family: "Encode Sans";
-    font-weight: 400;
-    background-color: rgb(17, 18, 19) !important;
+    background-color: rgb(16, 21, 26) !important;
     color: white !important;
 }
 
@@ -15,6 +15,7 @@ pre[class^=cod-] {
 
 .show-ang {
     color: rgb(255, 255, 255) !important;
+    font-weight: 500;
 }
 
 .show-attr {
@@ -22,9 +23,35 @@ pre[class^=cod-] {
 }
 
 .show-string {
-    color: rgb(0, 124, 240) !important;
+    color: rgb(88, 174, 255) !important;
 }
 
 .show-com {
     color: rgb(69, 209, 100) !important;
 }
+
+/**
+    CSS
+*/
+
+.show-selectores {
+    color: rgb(255, 225, 53) !important;
+}
+
+.show-claves {
+    color: rgb(173, 55, 252) !important;
+    font-weight: 500;
+}
+
+.show-prop {
+    color: rgb(91, 189, 255) !important;
+}
+
+.show-valor {
+    color: rgb(253, 160, 39) !important;
+}
+
+.show-llaves {
+    color: rgb(255, 255, 255) !important;
+}
+

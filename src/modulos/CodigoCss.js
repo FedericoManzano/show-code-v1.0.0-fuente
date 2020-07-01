@@ -38,17 +38,21 @@ import $ from "jquery"
         pos ++
 
         while(codigo[pos] !== '}' && pos < codigo.length ) {
-            while(codigo[pos] !== ':' && codigo[pos] !== '}' &&pos < codigo.length ) {
+            while(!esComentario(codigo, pos) && codigo[pos] !== ':' && codigo[pos] !== '}' &&pos < codigo.length ) {
                 resultado += "<span class='show-prop'>" + codigo[pos] + "</span>"
                 pos ++
             }
-            while( codigo[pos] !== '\n' && codigo[pos] !== '}' && pos < codigo.length ) {
+            
+            while( !esComentario(codigo, pos) && codigo[pos] !== '\n' && codigo[pos] !== '}' && pos < codigo.length ) {
                 resultado += "<span class='show-valor'>" + codigo[pos] + "</span>"
                 pos ++
             }
+
+            if( esComentario(codigo, pos) ) {
+                resultado = colorearComentario(codigo, resultado, pos) 
+                pos = indice
+            }
         }
-
-
         
         resultado += codigo[pos]
         indice = pos
@@ -78,12 +82,40 @@ import $ from "jquery"
         return resultado
     }
 
+    const esComentario = (codigo, pos) => {
+        return codigo[pos] === '/'
+    } 
+
+    const colorearComentario = (codigo, resultado, pos) => {
+        resultado += "<span class='show-com'>" + codigo[pos] + "</span>"
+        pos ++ 
+        while(!esComentario(codigo, pos) && pos < codigo.length ) {
+            resultado += "<span class='show-com'>" + codigo[pos] + "</span>"
+            pos ++ 
+        }
+
+        if(esComentario(codigo, pos)) {
+            resultado += "<span class='show-com'>" + codigo[pos] + "</span>"
+            pos ++ 
+        }
+
+        resultado += codigo[pos]
+        indice = pos
+
+        return resultado
+    }
+
+
     const colorearSelector = (codigo, resultado, pos) => {
-        while(codigo[pos] !== '}' && !esProp(codigo, pos) && !esClave(codigo, pos) && !esCadena(codigo, pos) && codigo[pos] !== '{' && pos < codigo.length ) {
+        while(!esComentario(codigo, pos) && codigo[pos] !== '}' && !esProp(codigo, pos) && !esClave(codigo, pos) && !esCadena(codigo, pos) && codigo[pos] !== '{' && pos < codigo.length ) {
             resultado += "<span class='show-selectores'>" + codigo[pos] + "</span>"
             pos ++
         }
 
+        if(esComentario(codigo, pos)) {
+            indice = pos
+            return resultado
+        }
         if(esCadena(codigo, pos) ) {
             indice = pos
             return resultado
@@ -128,8 +160,12 @@ import $ from "jquery"
                     }
 
                     if(esProp(codigo, i)) {
-                        console.log("pror")
                         resultado = colorearPop(codigo, resultado, i) 
+                        i = indice
+                    }
+
+                    if(esComentario(codigo, i)) {
+                        resultado = colorearComentario(codigo, resultado, i) 
                         i = indice
                     }
                 }
