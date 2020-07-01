@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"sixtaxis.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/_codigo.scss","../../sass/_colores.scss"],"names":[],"mappings":"AAAQ;AACR;EACI;EACA;EACA;;;ACJJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI","file":"sixtaxis.css"}
