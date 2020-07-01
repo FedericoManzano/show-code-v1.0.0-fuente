@@ -34,7 +34,7 @@ pre[class^=cod-] {
     CSS
 */
 .show-selectores {
-  color: #ffd000 !important;
+  color: #ff7b00 !important;
 }
 
 .show-claves {
@@ -43,6 +43,14 @@ pre[class^=cod-] {
 
 .show-prop {
   color: #0065a8 !important;
+}
+
+.show-valor {
+  color: #a55d00 !important;
+}
+
+.show-llaves {
+  color: black !important;
 }
 
 /*# sourceMappingURL=tema-claro.css.map */
