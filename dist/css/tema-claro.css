@@ -3,8 +3,13 @@ pre[class^=cod-] {
   overflow: auto;
   font-family: "Encode Sans";
   font-weight: 500;
+  background-color: white !important;
+  color: black !important;
 }
 
+/**
+    HTML
+*/
 .show-eti {
   color: #00519c !important;
 }
@@ -21,4 +26,12 @@ pre[class^=cod-] {
   color: #007cf0 !important;
 }
 
-/*# sourceMappingURL=sixtaxis.css.map */
+.show-com {
+  color: #006e18 !important;
+}
+
+/**
+    CSS
+*/
+
+/*# sourceMappingURL=tema-claro.css.map */

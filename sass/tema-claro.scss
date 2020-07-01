@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800;900&display=swap');
+pre[class^=cod-] {
+    overflow: auto;
+    font-family: "Encode Sans";
+    font-weight: 500;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+
+/**
+    HTML
+*/
+.show-eti {
+    color: rgb(0, 81, 156) !important;
+}
+
+.show-ang {
+    color: rgb(43, 43, 43) !important;
+}
+
+.show-attr {
+    color: rgb(0, 201, 157) !important;
+}
+
+.show-string {
+    color: rgb(0, 124, 240) !important;
+}
+
+.show-com {
+    color: rgb(0, 110, 24) !important;
+}
+
+/**
+    CSS
+*/

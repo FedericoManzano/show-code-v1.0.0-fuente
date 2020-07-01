@@ -15,11 +15,6 @@ import $ from "jquery"
         "'"
     ]
 
-    const APERTURA_CIERRE = [
-        '<', '>'
-    ]
-
-
 
     const esCaracter = (c) => {
         return CARACTER.indexOf(c) !== -1
@@ -87,18 +82,21 @@ import $ from "jquery"
     }
 
     const colorearComentario = (codigo, resultado, pos) => {
-        let cadenaAux = codigo.trim().substring(pos, codigo.length)
-        let tope = codigo.indexOf("-->")
-        while((cadenaAux.trim() !== '-->' &&  cadenaAux.trim() !== '--&gt;') && pos < tope){
-            resultado += "<span class='bs-html-comentarios'>" + codigo[pos] + "</span>"
+
+
+        resultado += "<span class='show-com'>" + codigo[pos] + "</span>"
+        pos ++
+
+        while((codigo[pos]  !== '>' &&  codigo[pos] !== '&gt;')){
+            resultado += "<span class='show-com'>" + codigo[pos] + "</span>"
             pos ++
-            cadenaAux = codigo.substring(pos, codigo.length)
-            
         }
 
-        for(var i = pos; i < pos + 4; i ++) 
-            resultado += "<span class='bs-html-comentarios'>" + codigo[i] + "</span>"
-        pos = i
+        if(codigo[pos]  !== '>' ||  codigo[pos] !== '&gt;') {
+            resultado += "<span class='show-com'>" + codigo[pos] + "</span>"
+        }
+
+
         indice = pos
         return resultado
     } 
@@ -131,7 +129,6 @@ import $ from "jquery"
         pos = indice
         return resultado
     }
-
     
     const inicializar = (config = "html") => {
         $(".cod-html").each((index, e) => {
