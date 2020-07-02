@@ -56,7 +56,7 @@ los temas y al archivo `sintax.min.js` que contiene la lógica para el funcionam
      <pre class="cod-js">
         <!-- Aca va lo que queremos resaltar js --->
     </pre>
-    
+
     <script src="https://ghcdn.rawgit.org/FedericoManzano/show-code-v1.0.0-fuente/master/dist/js/sintax.min.js"></script>
     
 </body>
@@ -78,6 +78,31 @@ Lo que debemos hacer después es inicializar los módulos correspondientes a cad
     Show.ShowJsInit()
 </script>
 ```
+
+### Precompilado
+
+Podemos disponer de los archivos de la librería sin necesidad de utilizar su CDN descargando 
+el archivo pre-compilado a través del siguiente enlace.
+
+[https://github.com/FedericoManzano/show-code-v1.0.0-precompilado/archive/master.zip](https://github.com/FedericoManzano/show-code-v1.0.0-precompilado/archive/master.zip)
+
+## Node js
+
+Podemos disponenr de la librería a través de los gestores de paquetes de NodeJs a través de los siguientes comandos.
+
+### NPM
+
+```js
+npm i show-code
+```
+
+### yarn 
+
+```js
+yarn add show-code
+```
+
+
 
 
 
