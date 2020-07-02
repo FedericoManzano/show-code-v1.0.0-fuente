@@ -1,5 +1,5 @@
 {
-  "name": "show-code",
+  "name": "show-sintax",
   "version": "1.0.0",
   "description": "Librería para resaltar el código fuente",
   "main": "app.js",

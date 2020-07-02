@@ -93,13 +93,13 @@ Podemos disponenr de la librería a través de los gestores de paquetes de NodeJ
 ### NPM
 
 ```js
-npm i show-code
+npm i show-sintax
 ```
 
 ### yarn 
 
 ```js
-yarn add show-code
+yarn add show-sintax
 ```
 
 ## Proyectos SPA
