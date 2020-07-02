@@ -3,7 +3,7 @@
 
 pre[class^=cod-] {
     background-color: rgb(245, 245, 245) !important;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(49, 56, 66) !important;
     
 }
 
@@ -36,6 +36,7 @@ pre[class^=cod-] {
 
 .show-neutro {
     color: black !important;
+    font-weight: 500;
 }
 
 /**
@@ -67,8 +68,8 @@ pre[class^=cod-] {
 
 
 .show-res {
-    color: rgb(16, 41, 180) !important;
-    font-weight: 500;
+    color: rgb(0, 81, 187) !important;
+    font-weight: 600;
 }
 
 .show-nombres {

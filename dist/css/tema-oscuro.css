@@ -6,7 +6,7 @@ pre[class^=cod-] {
   font-weight: 400;
   background-color: white !important;
   color: black !important;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 pre[class^=cod-] {

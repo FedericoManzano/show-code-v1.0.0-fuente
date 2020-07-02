@@ -2,7 +2,6 @@ import $ from "jquery"
 
 
 (function () {
-    let indice = 0
 
     const colorearCadenas = (codigo) => {
         let resultado = ""
@@ -64,8 +63,12 @@ import $ from "jquery"
         $(".cod-js").each((index, e) => {
             let codigo = $(e).html()
             $(e).text(codigo)
+            
             let resultado = colorearCadenas(codigo)
             resultado = colorearComentarios(resultado)
+
+        
+
             resultado = resultado.replace(/=&gt;/g, "<span class='show-res'>=></span>")
             resultado = resultado.replace(/const /g, "<span class='show-res'>const </span>")
             resultado = resultado.replace(/let /g, "<span class='show-res'>let </span>")
@@ -104,7 +107,24 @@ import $ from "jquery"
             resultado = resultado.replace(/document\./g, "<span class='show-sistema'>document</span><span class='show-neutro'>.</span>")
             resultado = resultado.replace(/\( *document *\)/g, "<span class='show-neutro'>( </span><span class='show-sistema'>document</span><span class='show-neutro'> )</span>")
             resultado = resultado.replace(/alert\./g, "<span class='show-sistema'>alert</span><span class='show-neutro'>.</span>")
-    
+            resultado = resultado.replace(/\(/g, "<span class='show-neutro'>(</span>")
+            resultado = resultado.replace(/\)/g, "<span class='show-neutro'>)</span>")
+            resultado = resultado.replace(/\+/g, "<span class='show-neutro'>+</span>")
+            resultado = resultado.replace(/{/g, "<span class='show-neutro'>{</span>")
+            resultado = resultado.replace(/}/g, "<span class='show-neutro'>}</span>")
+            resultado = resultado.replace(/&amp;&amp;/g, "<span class='show-neutro'>&&</span>")
+            resultado = resultado.replace(/\|/g, "<span class='show-neutro'>|</span>")
+            resultado = resultado.replace(/===/g, "<span class='show-neutro'>===</span>")
+            resultado = resultado.replace(/&lt;/g, "<span class='show-neutro'><</span>")
+            resultado = resultado.replace(/&lt;=/g, "<span class='show-neutro'>&lt=</span>")
+            resultado = resultado.replace(/&gt;/g, "<span class='show-neutro'>&gt</span>")
+            resultado = resultado.replace(/&gt;=/g, "<span class='show-neutro'>&gt=</span>")
+            resultado = resultado.replace(/[^show-]\-/g, "<span class='show-neutro'>-</span>")
+            resultado = resultado.replace(/[^class=]=/g, "<span class='show-neutro'>=</span>")
+            
+
+
+
 
             resultado = resultado.replace(/0/g, "<span class='show-numeros'>0</span>")
             resultado = resultado.replace(/1/g, "<span class='show-numeros'>1</span>")

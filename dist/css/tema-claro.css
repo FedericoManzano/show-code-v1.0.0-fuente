@@ -6,12 +6,12 @@ pre[class^=cod-] {
   font-weight: 400;
   background-color: white !important;
   color: black !important;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 pre[class^=cod-] {
   background-color: whitesmoke !important;
-  color: black !important;
+  color: #313842 !important;
 }
 
 /**
@@ -42,6 +42,7 @@ pre[class^=cod-] {
 
 .show-neutro {
   color: black !important;
+  font-weight: 500;
 }
 
 /**
@@ -69,8 +70,8 @@ pre[class^=cod-] {
 }
 
 .show-res {
-  color: #1029b4 !important;
-  font-weight: 500;
+  color: #0051bb !important;
+  font-weight: 600;
 }
 
 .show-nombres {
