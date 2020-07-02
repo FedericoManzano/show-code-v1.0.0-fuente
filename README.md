@@ -24,7 +24,7 @@ los temas y al archivo `show.min.js` que contiene la lógica para el funcionamie
 
 ### Plantilla
 
-```
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
