@@ -134,7 +134,26 @@ CodigoHtml.iniciar("texto")
 
 Le añadimos el parámetro texto a la función de inicialización.
 
+## Utilización 
 
+Es bastante simple la utilización una vez que disponemos de todos los elementos inicializados 
+de las formas antes descriptas.
+
+Simplemente declaramos una etqueta de html `pre` y le agregamos la clase `cod-html` o `cod-css` o `cod-js` dependiendo del lenguaje a mostrar.
+
+### Ejemplo
+
+```html
+<pre class="cod-html">
+    <div>
+        <h1>Esto es una muestra de código.</h1>
+    </div>
+</pre>
+```
+
+Utilizamos las clases cod-[lenguale] donde lenguaje son (html, css, js) respectivamente.
+
+Enjoy.
 
 
 
