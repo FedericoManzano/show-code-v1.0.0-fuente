@@ -78,4 +78,13 @@ pre[class^=cod-] {
   font-weight: 500;
 }
 
+.show-sistema {
+  color: #00ce7f !important;
+  font-weight: 500;
+}
+
+.show-numeros {
+  color: #61ffd8 !important;
+}
+
 /*# sourceMappingURL=tema-oscuro.css.map */

@@ -10,7 +10,7 @@ pre[class^=cod-] {
 }
 
 pre[class^=cod-] {
-  background-color: white !important;
+  background-color: whitesmoke !important;
   color: black !important;
 }
 
@@ -33,11 +33,15 @@ pre[class^=cod-] {
 }
 
 .show-string {
-  color: #007cf0 !important;
+  color: #fc0000 !important;
 }
 
 .show-com {
   color: #006e18 !important;
+}
+
+.show-neutro {
+  color: black !important;
 }
 
 /**
@@ -81,6 +85,15 @@ pre[class^=cod-] {
 .show-op {
   color: #04a064 !important;
   font-weight: 500;
+}
+
+.show-sistema {
+  color: #b83535 !important;
+  font-weight: 500;
+}
+
+.show-numeros {
+  color: red !important;
 }
 
 /*# sourceMappingURL=tema-claro.css.map */

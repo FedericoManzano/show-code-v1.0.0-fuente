@@ -2,7 +2,7 @@
 
 
 pre[class^=cod-] {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: rgb(245, 245, 245) !important;
     color: rgb(0, 0, 0) !important;
     
 }
@@ -27,11 +27,15 @@ pre[class^=cod-] {
 }
 
 .show-string {
-    color: rgb(0, 124, 240) !important;
+    color: rgb(252, 0, 0) !important;
 }
 
 .show-com {
     color: rgb(0, 110, 24) !important;
+}
+
+.show-neutro {
+    color: black !important;
 }
 
 /**
@@ -82,4 +86,12 @@ pre[class^=cod-] {
     font-weight: 500;
 }
 
+.show-sistema {
+    color: rgb(184, 53, 53) !important;
+    font-weight: 500;
+}
+
+.show-numeros {
+    color: rgb(255, 0, 0) !important;
+}
 
