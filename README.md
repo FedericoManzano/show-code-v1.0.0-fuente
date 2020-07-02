@@ -46,7 +46,15 @@ los temas y al archivo `sintax.min.js` que contiene la lógica para el funcionam
 <body>
 
     <pre class="cod-html">
-        <!-- Aca va lo que queremos resaltar --->
+        <!-- Aca va lo que queremos resaltar html --->
+    </pre>
+    
+    <pre class="cod-css">
+        <!-- Aca va lo que queremos resaltar css --->
+    </pre>
+
+     <pre class="cod-js">
+        <!-- Aca va lo que queremos resaltar js --->
     </pre>
     
     <script src="https://ghcdn.rawgit.org/FedericoManzano/show-code-v1.0.0-fuente/master/dist/js/sintax.min.js"></script>
@@ -54,3 +62,22 @@ los temas y al archivo `sintax.min.js` que contiene la lógica para el funcionam
 </body>
 </html>
 ```
+En esta plantilla tenemos que decidir que tema utilizar, el tema claro o el tema oscuro.
+
+#### Inicializar
+
+Lo que debemos hacer después es inicializar los módulos correspondientes a cada lenguaje a utilizar. 
+(Si solo utilizamos `html` solo inicializamos el módulo de html). 
+
+```html
+<!-- Código que va debajo del CDN de sixtax.js -->
+<script> 
+    // En este caso inicializamos los tres módulos pero no es necesario. 
+    Show.ShowHtmlInit()
+    Show.ShowCssInit()
+    Show.ShowJsInit()
+</script>
+```
+
+
+
