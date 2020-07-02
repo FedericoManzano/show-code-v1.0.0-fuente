@@ -1,6 +1,6 @@
 import CodigoHtml from "./modulos/CodigoHtml"
 import CodigoCss from "./modulos/CodigoCss"
-
+import CodigoJs from "./modulos/CodigoJs"
 
 (function() {
     const ShowHtml = (conf) => {
@@ -11,11 +11,15 @@ import CodigoCss from "./modulos/CodigoCss"
         CodigoCss.iniciar()
     }
 
+    const ShowJs = () => {
+        CodigoJs.iniciar()
+    }
 
 
     const Show = {
         ShowHtmlInit: (conf) => ShowHtml(conf),
-        ShowCssInit: () => ShowCss()
+        ShowCssInit: () => ShowCss(),
+        ShowJsInit: () => ShowJs()
     }
 
     window.Show = Show

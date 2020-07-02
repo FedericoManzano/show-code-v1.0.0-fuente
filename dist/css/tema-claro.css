@@ -61,4 +61,24 @@ pre[class^=cod-] {
   color: black !important;
 }
 
+.show-res {
+  color: #1029b4 !important;
+  font-weight: 500;
+}
+
+.show-nombres {
+  color: #a7c404 !important;
+  font-weight: 500;
+}
+
+.show-control {
+  color: #5b00c4 !important;
+  font-weight: 500;
+}
+
+.show-op {
+  color: #04a064 !important;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=tema-claro.css.map */
