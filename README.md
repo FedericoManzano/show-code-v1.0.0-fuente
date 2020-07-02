@@ -13,15 +13,15 @@ En versiones posteriores vamos a agregar más lenguajes.
 Para disponer de la librería podemos hacerlo a través del CDN de los archivos correspondientes a 
 los temas y al archivo `sintax.min.js` que contiene la lógica para el funcionamiento.
 
-### CDN Tema Claro
+#### CDN Tema Claro
 
 [https://ghcdn.rawgit.org/FedericoManzano/show-code-v1.0.0-fuente/master/dist/css/tema-claro.min.css](https://ghcdn.rawgit.org/FedericoManzano/show-code-v1.0.0-fuente/master/dist/css/tema-claro.min.css)
 
-### CDN Tema Oscuro
+#### CDN Tema Oscuro
 
 [https://ghcdn.rawgit.org/FedericoManzano/show-code-v1.0.0-fuente/master/dist/css/tema-oscuro.min.css](https://ghcdn.rawgit.org/FedericoManzano/show-code-v1.0.0-fuente/master/dist/css/tema-oscuro.min.css)
 
-### CDN de show.min.js
+#### CDN de show.min.js
 
 [https://ghcdn.rawgit.org/FedericoManzano/show-code-v1.0.0-fuente/master/dist/js/sintax.min.js](https://ghcdn.rawgit.org/FedericoManzano/show-code-v1.0.0-fuente/master/dist/js/sintax.min.js)
 
@@ -101,6 +101,39 @@ npm i show-code
 ```js
 yarn add show-code
 ```
+
+## Proyectos SPA
+
+Cuando trabajamos con librería como `react`, `angular` o `vue` es necesario importar los módulos 
+correspondientes a cada lenguaje e inicializarlo.
+
+```js
+import CodigoHtml from "show-code/src/modulos/CodigoHtml";
+import CodigoCss from "show-code/src/modulos/CodigoCss";
+import CodigoJs from "show-code/src/modulos/CodigoJs";
+```
+
+Luego de esto lo inicializamos donde corresponda llamando a la función iniciar. 
+
+
+```js
+CodigoHtml.iniciar()
+CodigoCss.iniciar()
+CodigoJs.iniciar()
+```
+
+### Interpolación
+
+en proyectos SPA trabajamos con la interpolación de contenedo a través de la sintaxis de 
+{{ contenido }} donde contenido es texto interpolado. Ahora bién en estos casos es necesario 
+inicializar el módulo de html de la siguiente manera.
+
+```js
+CodigoHtml.iniciar("texto")
+```
+
+Le añadimos el parámetro texto a la función de inicialización.
+
 
 
 
