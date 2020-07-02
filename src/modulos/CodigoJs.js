@@ -81,9 +81,9 @@ import $ from "jquery"
             resultado = resultado.replace(/import /g, "<span class='show-res'>import </span>")
             resultado = resultado.replace(/export /g, "<span class='show-res'>export </span>")
             resultado = resultado.replace(/from /g, "<span class='show-res'>from </span>")
-            resultado = resultado.replace(/true/g, "<span class='show-res'>true</span>")
-            resultado = resultado.replace(/false/g, "<span class='show-res'>false</span>")
-            
+            resultado = resultado.replace(/true /g, "<span class='show-res'>true </span>")
+            resultado = resultado.replace(/false /g, "<span class='show-res'>false </span>")
+            resultado = resultado.replace(/new /g, "<span class='show-res'>new </span>")
 
             resultado = resultado.replace(/if/g, "<span class='show-control'>if</span>")
             resultado = resultado.replace(/else/g, "<span class='show-control'>else</span>")
@@ -94,7 +94,7 @@ import $ from "jquery"
             resultado = resultado.replace(/return /g, "<span class='show-control'>return </span>")
             resultado = resultado.replace(/do /g, "<span class='show-control'>do </span>")
             resultado = resultado.replace(/forEach/g, "<span class='show-control'>forEach</span>")
-            resultado = resultado.replace(/for/g, "<span class='show-control'>for</span>")
+            resultado = resultado.replace(/for /g, "<span class='show-control'>for </span>")
             resultado = resultado.replace(/break/g, "<span class='show-control'>break</span>")
 
 

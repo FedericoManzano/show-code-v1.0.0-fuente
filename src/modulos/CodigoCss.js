@@ -20,7 +20,7 @@ import $ from "jquery"
 
     const esSelector = (codigo, pos) => {
         if(codigo[pos] === ' ' || codigo[pos] === '\t') return false
-        return /(\.*\#*[^ @ ][a-zA-Z-_\(\)\[\])]+ *\n*{)/.test(codigo.substring(pos, codigo.length))
+        return /(\.*\#*[^ @ ][a-zA-Z0-9-_\(\)\[\])]+ *\n*{)/.test(codigo.substring(pos, codigo.length))
     }
 
     const colorearClave = (codigo, resultado, pos) => {

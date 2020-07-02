@@ -7,6 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack"
   },
+  "files": [
+    "dist/{css,js}/*.{css,js,map}",
+    "src/{modulos}/**/*.{js}",
+    "src/**/*.js",
+    "sass/**/*.scss"
+  ],
+  "keywords": [
+    "librería",
+    "sintaxis",
+    "code",
+    "colores",
+    "resaltar"
+  ],
   "author": "Federico Manzano",
   "license": "MIT",
   "devDependencies": {
