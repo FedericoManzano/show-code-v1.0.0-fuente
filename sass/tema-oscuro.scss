@@ -5,7 +5,7 @@
 
 pre[class^=cod-] {
     background-color: rgb(16, 21, 26) !important;
-    color: white !important;
+    color: rgb(179, 179, 179) !important;
 }
 
 
@@ -23,7 +23,7 @@ pre[class^=cod-] {
 }
 
 .show-string {
-    color: rgb(88, 174, 255) !important;
+    color: rgb(255, 136, 0) !important;
 }
 
 .show-com {
@@ -39,7 +39,7 @@ pre[class^=cod-] {
 }
 
 .show-claves {
-    color: rgb(173, 55, 252) !important;
+    color: rgb(196, 108, 255) !important;
     font-weight: 500;
 }
 
@@ -53,5 +53,27 @@ pre[class^=cod-] {
 
 .show-llaves {
     color: rgb(255, 255, 255) !important;
+}
+
+
+
+.show-res {
+    color: rgb(207, 39, 39) !important;
+    font-weight: 500;
+}
+
+.show-nombres {
+    color: rgb(175, 106, 27) !important;
+}
+
+.show-control {
+    color: rgb(220, 45, 255) !important;
+    font-weight: 500;
+}
+
+
+.show-op {
+    color: rgb(4, 160, 100) !important;
+    font-weight: 500;
 }
 

@@ -4,6 +4,7 @@
 pre[class^=cod-] {
     background-color: rgb(255, 255, 255) !important;
     color: rgb(0, 0, 0) !important;
+    
 }
 
 
@@ -12,14 +13,17 @@ pre[class^=cod-] {
 */
 .show-eti {
     color: rgb(0, 83, 160) !important;
+    font-weight: 500;
 }
 
 .show-ang {
     color: rgb(43, 43, 43) !important;
+    font-weight: 500;
 }
 
 .show-attr {
     color: rgb(0, 201, 157) !important;
+    font-weight: 500;
 }
 
 .show-string {
@@ -64,8 +68,7 @@ pre[class^=cod-] {
 }
 
 .show-nombres {
-    color: rgb(167, 196, 4) !important;
-    font-weight: 500;
+    color: rgb(175, 106, 27) !important;
 }
 
 .show-control {

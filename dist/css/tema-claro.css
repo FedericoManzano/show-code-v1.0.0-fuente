@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 pre[class^=cod-] {
   padding-top: 20px;
   overflow: auto;
-  font-family: Roboto;
+  font-family: "Source Code Pro";
   font-weight: 400;
   background-color: white !important;
   color: black !important;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 pre[class^=cod-] {
@@ -19,14 +19,17 @@ pre[class^=cod-] {
 */
 .show-eti {
   color: #0053a0 !important;
+  font-weight: 500;
 }
 
 .show-ang {
   color: #2b2b2b !important;
+  font-weight: 500;
 }
 
 .show-attr {
   color: #00c99d !important;
+  font-weight: 500;
 }
 
 .show-string {
@@ -67,8 +70,7 @@ pre[class^=cod-] {
 }
 
 .show-nombres {
-  color: #a7c404 !important;
-  font-weight: 500;
+  color: #af6a1b !important;
 }
 
 .show-control {

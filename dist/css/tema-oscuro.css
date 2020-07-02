@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 pre[class^=cod-] {
   padding-top: 20px;
   overflow: auto;
-  font-family: Roboto;
+  font-family: "Source Code Pro";
   font-weight: 400;
   background-color: white !important;
   color: black !important;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 pre[class^=cod-] {
   background-color: #10151a !important;
-  color: white !important;
+  color: #b3b3b3 !important;
 }
 
 .show-eti {
@@ -28,7 +28,7 @@ pre[class^=cod-] {
 }
 
 .show-string {
-  color: #58aeff !important;
+  color: #ff8800 !important;
 }
 
 .show-com {
@@ -43,7 +43,7 @@ pre[class^=cod-] {
 }
 
 .show-claves {
-  color: #ad37fc !important;
+  color: #c46cff !important;
   font-weight: 500;
 }
 
@@ -57,6 +57,25 @@ pre[class^=cod-] {
 
 .show-llaves {
   color: white !important;
+}
+
+.show-res {
+  color: #cf2727 !important;
+  font-weight: 500;
+}
+
+.show-nombres {
+  color: #af6a1b !important;
+}
+
+.show-control {
+  color: #dc2dff !important;
+  font-weight: 500;
+}
+
+.show-op {
+  color: #04a064 !important;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=tema-oscuro.css.map */

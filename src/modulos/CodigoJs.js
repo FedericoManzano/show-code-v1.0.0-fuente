@@ -3,35 +3,39 @@ import $ from "jquery"
 
 (function () {
     let indice = 0
-    
-    const colorearFunctones = (codigo ,resultado, pos) => {
-        let desde = codigo.search(/[a-zA-Z_$]+ *\({1}/)
-        let aux = codigo.substring(pos, codigo.length)
 
-        while(desde !== -1 && pos < codigo.length) {
-            pos = desde
-            while(aux[pos] !== '(' && pos < codigo.length) {
-                resultado += "<span class='show-nombres'>" + codigo[pos] + "</span>"
-                pos ++
+    const colorearCadenas = (codigo) => {
+        let resultado = ""
+        for(let i = 0; i < codigo.length; i ++ ){
+            if(codigo[i] === '"' || codigo[i] === "'") {
+                let car = codigo[i] 
+                resultado += "<span class='show-string'>" + codigo[i] + "</span>"
+                i ++ 
+                while(i < codigo.length && codigo[i] !== car) {
+                    resultado += "<span class='show-string'>" + codigo[i] + "</span>"
+                    i ++
+                }
+                if(codigo[i] === car) {
+                    resultado += "<span class='show-string'>" + codigo[i] + "</span>"
+                    i ++
+                }
+                resultado += codigo[i]
+            }else {
+                resultado +=  codigo[i] 
             }
-            console.log(aux)
-
-            if(pos < codigo.length) {
-                aux = codigo.substring(pos, codigo.length)
-                desde = aux.search(/[a-zA-Z_$]+ *\({1}/)
-            }
-            
         }
+
+        return resultado
     }
     const inicializar = () => {
         $(".cod-js").each((index, e) => {
             let codigo = $(e).html()
             $(e).text(codigo)
-            let resultado = codigo
+            let resultado = colorearCadenas(codigo)
 
 
 
-            colorearFunctones(codigo, resultado, 0)
+          
 
 
 
